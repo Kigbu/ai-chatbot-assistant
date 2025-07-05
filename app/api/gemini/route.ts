@@ -22,6 +22,7 @@ const buildGoogleGemAIPrompt = (messages: Message[]): Message[] => [
     content: message.content,
   })),
 ];
+
 export async function POST(request: Request) {
   console.log(
     "process.env.GOOGLE_API_KEY :::: :::::  :>> ",
